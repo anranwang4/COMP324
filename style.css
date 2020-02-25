@@ -1,57 +1,259 @@
-.header {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 20px;
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+#home {
+    --first-color: #344bf6;
+    --second-color: #f6f034;    
+    --light-gray: lightgray;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+#next {
+    --first-color: tomato;
+    --second-color: deepskyblue;    
+    --light-gray: lightgray;
 }
 
-h2 {
-  text-align: center;
+html,body {
+    padding: 0;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
 }
 
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0.2em;
+    padding-bottom: 0.2em;
+    color: var(--first-color);
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+p {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+body {
+    display: flex;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+.wrap {
+    left: 280px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+#offcanvas-left,
+#offcanvas-right {
+    flex: 0 0 280px;
+    background-color: #f63440;
+    color: white;
+    transition-duration: .5s;
+}
+
+#offcanvas-left.hide {
+    margin-left: -280px;
+}
+
+#offcanvas-right.hide {
+    margin-right: -280px;
+}
+
+.togglebar {
+    background-color: #ffffff;
+    flex: 0 0;
+    min-width: 50px;
+    max-width: 5px;
+}
+
+.toggle i {
+    height: 80px;
+    font-size: 1.4em;
+    width: 100%;
+    color: var(--first-color);
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.toggle i:hover {
+    color: var(--second-color);
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 95%;
+}
+
+.center header {
+    background-color: var(--first-color);
+    color: white;
+}
+
+header {
+    background-color: blueviolet;
+    flex: 0 0 40px;
+    color: white;
+    
+    /* justify-content: center; */
+    padding: 20px;
+}
+
+header nav {
+    background-color: transparent;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.center header nav a:hover {
+    text-decoration: underline
+}
+
+nav {
+    background-color: #f0f0f0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    display: inline-flex;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.center section {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#offcanvas-left ul,
+#offcanvas-right ul {
+    padding: 0
+}
+
+#offcanvas-left ul li,
+#offcanvas-right ul li {
+    color: white;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    padding: 10px; 
+    border-bottom: 1px solid #222
+    
+}
+#offcanvas-left a,
+#offcanvas-right a {
+    color: white;
+    text-decoration: none;
+}
+
+#offcanvas-left li:hover a,
+#offcanvas-right li:hover a {
+    color: var(--second-color);
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-column-gap: 20px;
+    background-color: var(--second-color);
+    flex: 0 0 80px;
+    flex-direction: row;
+    padding: 40px 0px;
+    /* min-height: 80px; */
+}
+
+footer section:first-child {
+    grid-column: 2;
+}
+
+.no-style li {
+    list-style-type: none;
+}
+
+.no-style ul {
+    margin-top: 0;
+    padding: 0;
+}
+
+.no-style b {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.no-style address {
+    font-style: normal;
+}
+
+main {
+    min-height: 500px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-column-gap: 20px;
+    padding-bottom: 100px;
+}
+
+article > * {
+    grid-column: 2;
+    min-width: 0;
+}
+
+article > figure {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+article > aside {
+    grid-column: 3;
+    color: #666;
+    font-size: 0.8em;
+    padding-right: 20px;
+}
+
+p mark {
+    background-color: var(--first-color);
+    padding: 0 5px;
+    color: white;
+    font-weight: normal;
+}
+
+hr {
+    background-color: var(--first-color);
+    height: 2px;
+    width: 100%;
+    border: 0;
 }
