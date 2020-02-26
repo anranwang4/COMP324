@@ -257,3 +257,11 @@ hr {
     width: 100%;
     border: 0;
 }
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 98%;
+    width: 50%;
+  }
