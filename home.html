@@ -6,25 +6,31 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Home Plate</title>
     </head>
-    
+
     <body id="home" class="open-left">
         <div id="offcanvas-left" class="hide">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#vegetables">Vegetables</a></li>
-                <li><a href="#fruits">Fruits</a></li>
-                <li><a href="#grains">Grains</a></li>
-                <li><a href="#meats">Meats</a></li>
-                <li><a href="#dairy">Dairy</a></li>
+                <li><button class="wif home">Home</button></li>
+                <li><button class="wif about">About</button></li>
+                <li><button class="wif vegetable" >Vegetables</button></li>
+                <li><button class="wif fruit" onclick="bubbles()">Fruits</button></li>
+                <li><button class="wif grain">Grains</button></li>
+                <li><button class="wif meat">Meats</button></li>
+                <li><button class="wif dairy">Dairy</button></li>
+                <li><button class="wif search">Search</button></li>
             </ul>
         </div>
+          <div class ="free"id = "bubbleszero">Zero</div>
+          <div class="free" id="bubblesone">One</div>
+          <div class="free" id="bubblestwo">Two</div>
+          <div class="free" id="bubblesthree">Three</div>
+          <div class="free" id="bubblesfour">Four</div>
         <div class="togglebar">
             <div class="toggle" onclick="toggleLeft()">
                 <i class="fa fa-bars"></i>
             </div>
         </div>
-        
+
         <script type="text/javascript" src="script.js"></script>
         <img src="img/plate.svg" alt="Plate" height="200" width="200" class="centered" >
         <div class="footer">
