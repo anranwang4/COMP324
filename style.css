@@ -1,14 +1,54 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 #home {
     --first-color: #344bf6;
-    --second-color: #f6f034;    
+    --second-color: #f6f034;
     --light-gray: lightgray;
 }
 
 #next {
     --first-color: tomato;
-    --second-color: deepskyblue;    
+    --second-color: deepskyblue;
     --light-gray: lightgray;
+}
+
+#bubbles {
+  width: 100px;
+  height: 100px;
+  position: rela;
+  background-color: #8F1111;
+}
+
+.free {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  background: red;
+  color: white;
+}
+
+#Two {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: blue;
+}
+
+.wif {
+  border: none;
+  background-color: inherit;
+  padding: 2px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.wif {
+  color: #8F1111;
+}
+
+.wif:hover {
+  color: #6EFF94;
 }
 
 html,body {
@@ -53,6 +93,10 @@ body {
     margin-right: -280px;
 }
 
+#offcanvas-left-under.hide_2{
+    margin-left: -280px
+}
+
 .togglebar {
     background-color: #ffffff;
     flex: 0 0;
@@ -65,7 +109,7 @@ body {
     font-size: 1.4em;
     width: 100%;
     color: var(--first-color);
-    display: flex;   
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
@@ -91,7 +135,7 @@ header {
     background-color: blueviolet;
     flex: 0 0 40px;
     color: white;
-    
+
     /* justify-content: center; */
     padding: 20px;
 }
@@ -167,9 +211,9 @@ header {
     list-style-type: none;
     padding-left: 0;
     margin-left: 0;
-    padding: 10px; 
+    padding: 10px;
     border-bottom: 1px solid #222
-    
+
 }
 #offcanvas-left a,
 #offcanvas-right a {
@@ -267,11 +311,11 @@ hr {
   }
 
 .footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: #009933;
-color: white;
-text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #009933;
+  color: white;
+  text-align: center;
 }
