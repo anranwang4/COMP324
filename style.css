@@ -11,46 +11,6 @@
     --light-gray: lightgray;
 }
 
-#bubbles {
-  width: 100px;
-  height: 100px;
-  position: rela;
-  background-color: #8F1111;
-}
-
-.free {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  background: red;
-  color: white;
-}
-
-#Two {
-  position: relative;
-  top: 20px;
-  left: 20px;
-  background: blue;
-}
-
-.wif {
-  border: none;
-  background-color: inherit;
-  padding: 2px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.wif {
-  color: #8F1111;
-}
-
-.wif:hover {
-  color: #6EFF94;
-}
-
 html,body {
     padding: 0;
     height: 100%;
@@ -75,48 +35,6 @@ body {
 
 .wrap {
     left: 280px;
-}
-
-#offcanvas-left,
-#offcanvas-right {
-    flex: 0 0 280px;
-    background-color: #f63440;
-    color: white;
-    transition-duration: .5s;
-}
-
-#offcanvas-left.hide {
-    margin-left: -280px;
-}
-
-#offcanvas-right.hide {
-    margin-right: -280px;
-}
-
-#offcanvas-left-under.hide_2{
-    margin-left: -280px
-}
-
-.togglebar {
-    background-color: #ffffff;
-    flex: 0 0;
-    min-width: 50px;
-    max-width: 5px;
-}
-
-.toggle i {
-    height: 80px;
-    font-size: 1.4em;
-    width: 100%;
-    color: var(--first-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-}
-
-.toggle i:hover {
-    color: var(--second-color);
 }
 
 .center {
@@ -198,32 +116,6 @@ header {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-}
-
-#offcanvas-left ul,
-#offcanvas-right ul {
-    padding: 0
-}
-
-#offcanvas-left ul li,
-#offcanvas-right ul li {
-    color: white;
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-    padding: 10px;
-    border-bottom: 1px solid #222
-
-}
-#offcanvas-left a,
-#offcanvas-right a {
-    color: white;
-    text-decoration: none;
-}
-
-#offcanvas-left li:hover a,
-#offcanvas-right li:hover a {
-    color: var(--second-color);
 }
 
 /*
