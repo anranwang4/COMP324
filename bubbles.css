@@ -1,11 +1,40 @@
 .free {
   width: 100px;
   height: 100px;
-  padding: 5px;
+  padding: 30px;
   background: red;
   color: white;
+  text-align: center;
+  border-radius: 35%;
+  display: inline-block;
 }
 
-#bubbles div {
-  margin-left: -580px;
+.space {
+	width: 10px;
+	height: 50px;
+	background: inherit;
+}
+
+#bubbles {
+  margin-left: 50px;
+  display: none;
+}
+
+#bubbles-right {
+  margin-right: 50px;
+  display: none;
+}
+/*
+.reset {
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  width: 10%;
+  background-color: #009933;
+  color: white;
+  text-align: center;
 }
