@@ -10,13 +10,16 @@
     margin-left: -280px;
 }
 
+/*
 #offcanvas-right.hide {
     margin-right: -280px;
 }
 
+
 #offcanvas-left-under.hide_2{
     margin-left: -280px
 }
+*/
 
 #offcanvas-left ul,
 #offcanvas-right ul {
@@ -33,6 +36,7 @@
     border-bottom: 1px solid #222
 
 }
+
 #offcanvas-left a,
 #offcanvas-right a {
     color: white;
