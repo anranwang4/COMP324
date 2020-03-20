@@ -1,0 +1,11 @@
+.free {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  background: red;
+  color: white;
+}
+
+#bubbles div {
+  margin-left: -580px;
+}
