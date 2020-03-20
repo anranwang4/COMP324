@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="bubbles.css">
+        <link rel="stylesheet" type="text/css" href="toggle.css">
+        <link rel="stylesheet" type="text/css" href="toggleButtons.css">
         <title>Home Plate</title>
     </head>
 
@@ -12,19 +15,21 @@
             <ul>
                 <li><button class="wif home">Home</button></li>
                 <li><button class="wif about">About</button></li>
-                <li><button class="wif vegetable" >Vegetables</button></li>
+                <li><button class="wif vegetable" onclick="bubbles()">Vegetables</button></li>
                 <li><button class="wif fruit" onclick="bubbles()">Fruits</button></li>
-                <li><button class="wif grain">Grains</button></li>
-                <li><button class="wif meat">Meats</button></li>
-                <li><button class="wif dairy">Dairy</button></li>
-                <li><button class="wif search">Search</button></li>
+                <li><button class="wif grain" onclick="bubbles()">Grains</button></li>
+                <li><button class="wif meat" onclick="bubbles()">Meats</button></li>
+                <li><button class="wif dairy" onclick="bubbles()">Dairy</button></li>
+                <li><button class="wif search" onclick="bubbles()">Search</button></li>
             </ul>
         </div>
-          <div class ="free"id = "bubbleszero">Zero</div>
-          <div class="free" id="bubblesone">One</div>
-          <div class="free" id="bubblestwo">Two</div>
-          <div class="free" id="bubblesthree">Three</div>
-          <div class="free" id="bubblesfour">Four</div>
+          <div id="bubbles" class="replace_later">
+            <div class="free" id="bubbleszero">Zero</div>
+            <div class="free" id="bubblesone">One</div>
+            <div class="free" id="bubblestwo">Two</div>
+            <div class="free" id="bubblesthree">Three</div>
+            <div class="free" id="bubblesfour">Four</div>
+          </div>
         <div class="togglebar">
             <div class="toggle" onclick="toggleLeft()">
                 <i class="fa fa-bars"></i>
@@ -34,8 +39,8 @@
         <script type="text/javascript" src="script.js"></script>
         <img src="img/plate.svg" alt="Plate" height="200" width="200" class="centered" >
         <div class="footer">
-            <p>Warning</p>
-            <p>Footer</p>
+            <p>Welcome to</p>
+            <p>Home Plate</p>
             <p>WIP</p>
           </div>
     </body>
