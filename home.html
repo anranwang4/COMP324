@@ -20,27 +20,40 @@
                 <li><button class="wif grain" onclick="bubbles()">Grains</button></li>
                 <li><button class="wif meat" onclick="bubbles()">Meats</button></li>
                 <li><button class="wif dairy" onclick="bubbles()">Dairy</button></li>
-                <li><button class="wif search" onclick="bubbles()">Search</button></li>
+                <li><button class="wif search">Search</button></li>
             </ul>
-        </div>
-          <div id="bubbles" class="replace_later">
-            <div class="free" id="bubbleszero">Zero</div>
-            <div class="free" id="bubblesone">One</div>
-            <div class="free" id="bubblestwo">Two</div>
-            <div class="free" id="bubblesthree">Three</div>
-            <div class="free" id="bubblesfour">Four</div>
-          </div>
+        </div>          
         <div class="togglebar">
             <div class="toggle" onclick="toggleLeft()">
                 <i class="fa fa-bars"></i>
             </div>
         </div>
-
+		<div id="bubbles" class="hidden">
+			<div class="space"></div>
+            <div class="free" id="bubbleszero">Zero</div>
+			<div class="space"></div>
+            <div class="free" id="bubblesone">One</div>
+			<div class="space"></div>
+            <div class="free" id="bubblestwo">Two</div>
+        </div>
         <script type="text/javascript" src="script.js"></script>
         <img src="img/plate.svg" alt="Plate" height="200" width="200" class="centered" >
+		<div id="bubbles-right" class="hidden">
+			<div class="space"></div>
+            <div class="free" id="bubblesthree">Three</div>
+			<div class="space"></div>
+            <div class="free" id="bubblesfour">Four</div>
+			<div class="space"></div>
+			<div class="free" id="bubblesfive">Five</div>
+        </div>
+		<!--
+		<div class= "reset">
+			<p><button onclick = "reset()">Reset</p>
+		</div>
+		-->
         <div class="footer">
             <p>Welcome to</p>
             <p>Home Plate</p>
             <p>WIP</p>
-          </div>
+        </div>
     </body>
