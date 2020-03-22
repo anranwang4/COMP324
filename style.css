@@ -1,13 +1,13 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 #home {
     --first-color: #344bf6;
-    --second-color: #f6f034;    
+    --second-color: #f6f034;
     --light-gray: lightgray;
 }
 
 #next {
     --first-color: tomato;
-    --second-color: deepskyblue;    
+    --second-color: deepskyblue;
     --light-gray: lightgray;
 }
 
@@ -37,44 +37,6 @@ body {
     left: 280px;
 }
 
-#offcanvas-left,
-#offcanvas-right {
-    flex: 0 0 280px;
-    background-color: #f63440;
-    color: white;
-    transition-duration: .5s;
-}
-
-#offcanvas-left.hide {
-    margin-left: -280px;
-}
-
-#offcanvas-right.hide {
-    margin-right: -280px;
-}
-
-.togglebar {
-    background-color: #ffffff;
-    flex: 0 0;
-    min-width: 50px;
-    max-width: 5px;
-}
-
-.toggle i {
-    height: 80px;
-    font-size: 1.4em;
-    width: 100%;
-    color: var(--first-color);
-    display: flex;   
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-}
-
-.toggle i:hover {
-    color: var(--second-color);
-}
-
 .center {
     display: flex;
     flex-direction: column;
@@ -91,7 +53,7 @@ header {
     background-color: blueviolet;
     flex: 0 0 40px;
     color: white;
-    
+
     /* justify-content: center; */
     padding: 20px;
 }
@@ -154,32 +116,6 @@ header {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-}
-
-#offcanvas-left ul,
-#offcanvas-right ul {
-    padding: 0
-}
-
-#offcanvas-left ul li,
-#offcanvas-right ul li {
-    color: white;
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-    padding: 10px; 
-    border-bottom: 1px solid #222
-    
-}
-#offcanvas-left a,
-#offcanvas-right a {
-    color: white;
-    text-decoration: none;
-}
-
-#offcanvas-left li:hover a,
-#offcanvas-right li:hover a {
-    color: var(--second-color);
 }
 
 /*
@@ -267,11 +203,11 @@ hr {
   }
 
 .footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: #009933;
-color: white;
-text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #009933;
+  color: white;
+  text-align: center;
 }

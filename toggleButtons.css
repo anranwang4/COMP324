@@ -1,0 +1,16 @@
+.wif {
+  border: none;
+  background-color: inherit;
+  padding: 2px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.wif {
+  color: #8F1111;
+}
+
+.wif:hover {
+  color: #6EFF94;
+}
