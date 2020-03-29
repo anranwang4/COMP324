@@ -7,13 +7,14 @@
         <link rel="stylesheet" type="text/css" href="bubbles.css">
         <link rel="stylesheet" type="text/css" href="toggle.css">
         <link rel="stylesheet" type="text/css" href="toggleButtons.css">
+        <link rel="stylesheet" type="text/css" href="reset.css">
         <title>Home Plate</title>
     </head>
 
     <body id="home" class="open-left">
         <div id="offcanvas-left" class="hide">
             <ul>
-                <li><button class="wif home">Home</button></li>
+                <li><button class="wif home" onclick="homeBtn()">Home</button></li>
                 <li><button class="wif about" id="myBtn" onclick="myBtn()">About</button></li>
                 <li><button class="wif vegetable" onclick="bubbles()">Vegetables</button></li>
                 <li><button class="wif fruit" onclick="bubbles()">Fruits</button></li>
@@ -28,35 +29,31 @@
                 <i class="fa fa-bars"></i>
             </div>
         </div>
-		<div id="bubbles" class="hidden">
-			<div class="space"></div>
-            <div class="free" draggable="true" id="bubbleszero">Zero</div>
-			<div class="space"></div>
-            <div class="free" draggable="true" id="bubblesone">One</div>
-			<div class="space"></div>
-            <div class="free" draggable="true" id="bubblestwo">Two</div>
+    		<div id="bubbles" class="hidden">
+    			<div class="space"></div>
+                <div class="free" draggable="true" id="bubbleszero">Zero</div>
+    			<div class="space"></div>
+                <div class="free" draggable="true" id="bubblesone">One</div>
+    			<div class="space"></div>
+                <div class="free" draggable="true" id="bubblestwo">Two</div>
+            </div>
+            <script type="text/javascript" src="script.js"></script>
+            <img src="img/plate.svg" alt="Plate" height="200" width="200" class="centered" >
+    		<div id="bubbles-right" class="hidden">
+    			<div class="space"></div>
+                <div class="free" draggable="true" id="bubblesthree">Three</div>
+    			<div class="space"></div>
+                <div class="free" draggable="true" id="bubblesfour">Four</div>
+    			<div class="space"></div>
+    			<div class="free" draggable="true" id="bubblesfive">Five</div>
         </div>
-        <script type="text/javascript" src="script.js"></script>
-        <img src="img/plate.svg" alt="Plate" height="200" width="200" class="centered" >
-		<div id="bubbles-right" class="hidden">
-			<div class="space"></div>
-            <div class="free" draggable="true" id="bubblesthree">Three</div>
-			<div class="space"></div>
-            <div class="free" draggable="true" id="bubblesfour">Four</div>
-			<div class="space"></div>
-			<div class="free" draggable="true" id="bubblesfive">Five</div>
-        </div>
-		<!--
-		<div class= "reset">
-			<p><button onclick = "reset()">Reset</p>
-		</div>
-		-->
+    		<div class= "reset">
+    			<p><button class = "wifreset" onclick = "resetButton()">Reset</p>
+    		</div>
         <div class="footer">
             <p>Welcome to Home Plate!</p>
             <p>Begin by dragging and dropping items onto the plate.</p>
         </div>
-
-
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
