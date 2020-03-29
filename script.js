@@ -10,31 +10,30 @@ window.toggleRight = function() {
 }
 */
 
+function homeBtn(){
+  location.replace("home.html");
+}
+
 function bubbles(){
   var element = document.getElementById("offcanvas-left");
   element.classList.toggle("hide");
   var bub =  document.getElementById("bubbles");
   var bubr = document.getElementById("bubbles-right");
-  if (bub.style.display === "none") {
-    bub.style.display = "block";
-	  if (bubr.style.display === "none") {
-		bubr.style.display = "block";
-	  } else {
-		bubr.style.display = "none";
-	  }
+  if (bub.style.display === "block" && bubr.style.display === "block") {
+    
   } else {
-    bub.style.display = "none";
-	  if (bubr.style.display === "none") {
+    bub.style.display = "block";
 		bubr.style.display = "block";
-	  } else {
-		bubr.style.display = "none";
-	  }
   }
 }
 
-function reset(){
+function resetButton(){
 	var bub =  document.getElementById("bubbles");
-	var bubr = document.getElementById("bubbles-right")
+	var bubr = document.getElementById("bubbles-right");
+  if (bub.style.display === "block" && bubr.style.display === "block") {
+      bub.style.display = "none";
+  		bubr.style.display = "none";
+  }
 }
 
 // Taken from W3Schools!
