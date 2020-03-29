@@ -14,7 +14,7 @@
         <div id="offcanvas-left" class="hide">
             <ul>
                 <li><button class="wif home">Home</button></li>
-                <li><button class="wif about" id="myBtn">About</button></li>
+                <li><button class="wif about" id="myBtn" onclick="myBtn()">About</button></li>
                 <li><button class="wif vegetable" onclick="bubbles()">Vegetables</button></li>
                 <li><button class="wif fruit" onclick="bubbles()">Fruits</button></li>
                 <li><button class="wif grain" onclick="bubbles()">Grains</button></li>
@@ -22,7 +22,7 @@
                 <li><button class="wif dairy" onclick="bubbles()">Dairy</button></li>
                 <li><button class="wif search">Search</button></li>
             </ul>
-        </div>          
+        </div>
         <div class="togglebar">
             <div class="toggle" onclick="toggleLeft()">
                 <i class="fa fa-bars"></i>
@@ -61,35 +61,10 @@
 
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close">&times;</span>
-              <p style="font-size:180%;">Home Plate is a smart plate that will tell you based on your food intake whether the combination is nutritious or not, it will also notify you if some food doesn't go well with another.</p>
+              <span class="close" onclick="closeBtn()">&times;</span>
+              <p style="font-size:165%;">Home Plate is a smart plate that will tell you based on your food intake whether the combination is nutritious or not, it will also notify you if some food doesn't go well with another.</p>
               <p style="font-size:130%;">Created by: Anran Wang, Justin Kim, Matthew Rosiles, Michael Mehr, Matt Hempe.</p>
             </div>
-          
-          </div>
-          
 
-          <!-- Having this part in script.js doesn't work for some reason, so it is here for now -->
-          <!-- Taken from W3Schools! -->
-          <script>
-            var modal = document.getElementById("myModal");
-            var btn = document.getElementById("myBtn");
-            var span = document.getElementsByClassName("close")[0];
-            btn.onclick = function() {
-              modal.style.display = "block";
-            }
-            
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-            </script>
-
-
+        </div>
     </body>
