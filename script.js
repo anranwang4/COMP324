@@ -14,26 +14,31 @@ function homeBtn(){
   location.replace("home.html");
 }
 
-function bubbles(){
-  var element = document.getElementById("offcanvas-left");
-  element.classList.toggle("hide");
-  var bub =  document.getElementById("bubbles");
-  var bubr = document.getElementById("bubbles-right");
-  if (bub.style.display === "block" && bubr.style.display === "block") {
-    
-  } else {
-    bub.style.display = "block";
-		bubr.style.display = "block";
-  }
-}
-
 function resetButton(){
-	var bub =  document.getElementById("bubbles");
-	var bubr = document.getElementById("bubbles-right");
-  if (bub.style.display === "block" && bubr.style.display === "block") {
-      bub.style.display = "none";
-  		bubr.style.display = "none";
-  }
+	var bub =  document.getElementById("fruit");
+	var bubr = document.getElementById("fruitR");
+  bub.style.display = "none";
+  bubr.style.display = "none";
+
+  bub =  document.getElementById("vegie");
+  bubr = document.getElementById("vegieR");
+  bub.style.display = "none";
+  bubr.style.display = "none";
+
+  bub =  document.getElementById("grains");
+  bubr = document.getElementById("grainsR");
+  bub.style.display = "none";
+  bubr.style.display = "none";
+
+  bub =  document.getElementById("meats");
+  bubr = document.getElementById("meatsR");
+  bub.style.display = "none";
+  bubr.style.display = "none";
+
+  bub =  document.getElementById("dairy");
+  bubr = document.getElementById("dairyR");
+  bub.style.display = "none";
+  bubr.style.display = "none";
 }
 
 // Taken from W3Schools!
