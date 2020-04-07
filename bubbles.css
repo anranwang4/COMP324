@@ -6,7 +6,19 @@
   color: white;
   text-align: center;
   border-radius: 35%;
-  display: inline-block;
+  margin-left: 50px;
+  cursor: move;
+}
+
+.freeR {
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  background: red;
+  color: white;
+  text-align: center;
+  border-radius: 35%;
+  margin-right: 50px;
   cursor: move;
 }
 
@@ -16,12 +28,52 @@
 	background: inherit;
 }
 
-#bubbles {
+#fruit {
   margin-left: 50px;
   display: none;
 }
 
-#bubbles-right {
+#fruitR {
+  margin-right: 50px;
+  display: none;
+}
+
+#vegie {
+  margin-left: 50px;
+  display: none;
+}
+
+#vegieR {
+  margin-right: 50px;
+  display: none;
+}
+
+#grains {
+  margin-left: 50px;
+  display: none;
+}
+
+#grainsR {
+  margin-right: 50px;
+  display: none;
+}
+
+#meats {
+  margin-left: 50px;
+  display: none;
+}
+
+#meatsR {
+  margin-right: 50px;
+  display: none;
+}
+
+#dairy {
+  margin-left: 50px;
+  display: none;
+}
+
+#dairyR {
   margin-right: 50px;
   display: none;
 }
