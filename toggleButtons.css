@@ -2,7 +2,8 @@
   border: none;
   background-color: inherit;
   padding: 2px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Lucida Console";
   cursor: pointer;
   display: inline-block;
 }
