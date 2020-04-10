@@ -1,11 +1,12 @@
 .wifreset {
   border: none;
   background-color: #7161FF;
-  padding: 13px;
-  font-size: 19px;
+  padding: 10px;
+  font-size: 20px;
   cursor: pointer;
   position:absolute;
   border-radius: 35%;
+  border: 5px solid;
   font-family: "Arial";
   bottom: 5.7%;
   left: 50%;
