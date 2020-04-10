@@ -33,6 +33,10 @@ body {
     display: flex;
 }
 
+body{
+  background-image: url("img/diamond.jfif");
+}
+
 .wrap {
     left: 280px;
 }
