@@ -49,7 +49,7 @@
 }
 
 .togglebar {
-    background-color: #ffffff;
+    background-color: #1F109D;
     flex: 0 0;
     min-width: 50px;
     max-width: 5px;
@@ -63,8 +63,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
-    border-style: solid;
+    background-color: #1F109D;
+    border-style: #1F109D solid;
 }
 
 .toggle i:hover {
