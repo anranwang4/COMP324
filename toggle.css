@@ -1,7 +1,7 @@
 #offcanvas-left,
 #offcanvas-right {
     flex: 0 0 280px;
-    background-color: #f63440;
+    background-color: #706ed3;
     color: white;
     transition-duration: .5s;
 }

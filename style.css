@@ -1,12 +1,12 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 #home {
     --first-color: #344bf6;
-    --second-color: #f6f034;
+    --second-color: #d9cff5;
     --light-gray: lightgray;
 }
 
 #next {
-    --first-color: tomato;
+    --first-color: rgb(153, 163, 248);
     --second-color: deepskyblue;
     --light-gray: lightgray;
 }

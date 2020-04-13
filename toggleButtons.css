@@ -9,9 +9,9 @@
 }
 
 .wif {
-  color: #8F1111;
+  color: rgb(16, 1, 100);
 }
 
 .wif:hover {
-  color: #6EFF94;
+  color: rgb(156, 233, 247);
 }
