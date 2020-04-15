@@ -259,3 +259,19 @@ hr {
     text-decoration: none;
     cursor: pointer;
   }
+
+  
+/* source: https://www.sitepoint.com/accessible-drag-drop/ */
+/* draggable items */
+[data-draggable="item"]
+{
+    display:block;
+    list-style-type:none;
+}
+
+/* dragging target */
+[data-draggable="target"]
+{
+    list-style-type:none;    
+    overflow-y:auto;
+}
