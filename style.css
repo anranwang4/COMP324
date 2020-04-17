@@ -1,277 +1,143 @@
-@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
-#home {
-    --first-color: #344bf6;
-    --second-color: #d9cff5;
-    --light-gray: lightgray;
-}
-
-#next {
-    --first-color: rgb(153, 163, 248);
-    --second-color: deepskyblue;
-    --light-gray: lightgray;
-}
-
-html,body {
-    padding: 0;
-    height: 100%;
-    margin: 0px;
-    overflow: hidden;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    margin-bottom: 0.2em;
-    padding-bottom: 0.2em;
-    color: var(--first-color);
-}
-
-p {
-    margin-top: 5px;
-    margin-bottom: 10px;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
+	margin: 0;
+	padding: 0;	
+	background: #f64851;
 }
 
-body{
-  background-image: url("img/diamond.jfif");
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f6343f;
+}	
+
+.logo {
+	float: left;
+	margin: .5rem;
 }
 
-.wrap {
-    left: 280px;
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
 
-.center {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    min-width: 95%;
+.navbar-links li {
+	list-style: none;
 }
 
-.center header {
-    background-color: var(--first-color);
-    color: white;
+.navbar-links li a {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	padding-right: 1rem;
+	margin-right: .75rem;
 }
 
-header {
-    background-color: blueviolet;
-    flex: 0 0 40px;
-    color: white;
-
-    /* justify-content: center; */
-    padding: 20px;
+.navbar-links a:hover {
+	color: #0070eb;
+	transition: all ease-in-out 250ms;
 }
 
-header nav {
-    background-color: transparent;
+.toggle-button {
+	position: absolute;
+	top: .75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 10px;
 }
 
-header nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
+@media (max-width: 600px) {
+	.toggle-button {
+		display: flex;
+	}
+
+	.navbar-links {
+		display: none;
+		width: 100%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.navbar-links li {
+		text-align: center;
+	}
+
+	.navbar-links li a {
+		padding: .5rem 1rem;
+	}
+
+	.navbar-links.active {
+		display: flex;
+	}
 }
 
-.center header nav a:hover {
-    text-decoration: underline
+.container {
+	width: 12000px;
+	margin: 20px auto;
+	columns: 4;
+	column-gap: 40px;
 }
 
-nav {
-    background-color: #f0f0f0;
+.container .box {
+	width: 100%;
+	margin: 0 0 20px;
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
+/*.navbar-links li:hover {
+	background-color: #0070eb;
+}*/
 
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-nav ul li{
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-    display: inline-flex;
-    padding: 10px;
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
-nav a {
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.center section {
-    flex: 1 1 auto;
-    overflow-y: auto;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-/*
-footer {
-    display: grid;
-    grid-template-columns: 10% 1fr 1fr 10%;
-    grid-column-gap: 20px;
-    background-color: var(--second-color);
-    flex: 0 0 80px;
-    flex-direction: row;
-    padding: 40px 0px;
-}
-
-footer section:first-child {
-    grid-column: 2;
-}
-*/
-
-.no-style li {
-    list-style-type: none;
-}
-
-.no-style ul {
-    margin-top: 0;
-    padding: 0;
-}
-
-.no-style b {
-    margin-bottom: 0;
-    padding: 0;
-}
-
-.no-style address {
-    font-style: normal;
-}
-
-main {
-    min-height: 500px;
-}
-
-article {
-    display: grid;
-    grid-template-columns: 10% 1fr 10%;
-    grid-column-gap: 20px;
-    padding-bottom: 100px;
-}
-
-article > * {
-    grid-column: 2;
-    min-width: 0;
-}
-
-article > figure {
-    grid-column: 1 / -1;
-    margin-bottom: 20px;
-}
-
-article > aside {
-    grid-column: 3;
-    color: #666;
-    font-size: 0.8em;
-    padding-right: 20px;
-}
-
-p mark {
-    background-color: var(--first-color);
-    padding: 0 5px;
-    color: white;
-    font-weight: normal;
-}
-
-hr {
-    background-color: var(--first-color);
-    height: 2px;
-    width: 100%;
-    border: 0;
-}
-
-.centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 98%;
-    width: 50%;
-  }
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
   width: 100%;
-  font-size: 20px;
-  font-family: Arial;
-  background-color: blueviolet;
-  color: white;
-  text-align: center;
 }
 
-
-/* Taken from W3Schools! */
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  
-/* source: https://www.sitepoint.com/accessible-drag-drop/ */
-/* draggable items */
-[data-draggable="item"]
-{
-    display:block;
-    list-style-type:none;
-}
-
-/* dragging target */
-[data-draggable="target"]
-{
-    list-style-type:none;    
-    overflow-y:auto;
-}
