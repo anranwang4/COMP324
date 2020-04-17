@@ -108,10 +108,12 @@ body {
 	margin: 0 0 20px;
 }
 
+/* ignore this line, can implement if the transition/colors are not well thought out later in the final UI iteration */
 /*.navbar-links li:hover {
 	background-color: #0070eb;
 }*/
 
+/* god bless W3Schools for making this work...other crap was rubbish and performed slowly...refer to website & w3bits.com */
 .row {
   display: -ms-flexbox; 
   display: flex;
@@ -120,7 +122,6 @@ body {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 25%; 
   flex: 25%;
@@ -132,9 +133,14 @@ body {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+.column img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 @media screen and (max-width: 800px) {
   .column {
     -ms-flex: 50%;
