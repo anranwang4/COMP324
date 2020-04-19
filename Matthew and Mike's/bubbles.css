@@ -1,0 +1,70 @@
+.free {
+  padding: 30px;
+  height: 100px;
+  width: 175px;
+  background: #2C1657;
+  color: rgb(220, 200, 255);
+  font-size: 20px;
+  font-family: Arial;
+  text-align: center;
+  border-radius: 35%;
+  border: 6px solid #8C7AAE;
+  margin-left: 50px;
+  cursor: move;
+}
+
+.space {
+	width: 10px;
+	height: 30px;
+	background: inherit;
+}
+
+#fruit {
+  margin-left: 50px;
+  display: none;
+}
+
+#fruitR {
+  margin-right: 50px;
+  display: none;
+}
+
+#vegie {
+  margin-left: 50px;
+  display: none;
+}
+
+#vegieR {
+  margin-right: 50px;
+  display: none;
+}
+
+#grains {
+  margin-left: 50px;
+  display: none;
+}
+
+#grainsR {
+  margin-right: 50px;
+  display: none;
+}
+
+#meats {
+  margin-left: 50px;
+  display: none;
+}
+
+#meatsR {
+  margin-right: 50px;
+  display: none;
+}
+
+#dairy {
+  margin-left: 50px;
+  display: none;
+}
+
+#dairyR {
+  margin-right: 50px;
+  display: none;
+}
