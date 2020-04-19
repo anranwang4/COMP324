@@ -2,13 +2,13 @@
   padding: 30px;
   height: 100px;
   width: 175px;
-  background: purple;
-  color: #FCD4F8;
+  background: #2C1657;
+  color: rgb(220, 200, 255);
   font-size: 20px;
   font-family: Arial;
   text-align: center;
   border-radius: 35%;
-  border: 6px solid #FF2CE1;
+  border: 6px solid #8C7AAE;
   margin-left: 50px;
   cursor: move;
 }

@@ -1,15 +1,15 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 #home {
-    --first-color: #344bf6;
+    --first-color: #8d8ee9;
     --second-color: #d9cff5;
     --light-gray: lightgray;
 }
 
-#next {
-    --first-color: rgb(153, 163, 248);
-    --second-color: deepskyblue;
+/* #next {
+    --first-color: rgb(247, 2, 214);
+    --second-color: rgb(225, 0, 255);
     --light-gray: lightgray;
-}
+} */
 
 html,body {
     padding: 0;
@@ -53,14 +53,12 @@ body{
     color: white;
 }
 
-header {
-    background-color: blueviolet;
+/* header {
+    background-color: #fc08bf;
     flex: 0 0 40px;
     color: white;
-
-    /* justify-content: center; */
     padding: 20px;
-}
+} */
 
 header nav {
     background-color: transparent;
@@ -213,7 +211,7 @@ hr {
   width: 100%;
   font-size: 20px;
   font-family: Arial;
-  background-color: blueviolet;
+  background-color: #103E50;
   color: white;
   text-align: center;
 }

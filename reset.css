@@ -1,6 +1,6 @@
 .wifreset {
   border: none;
-  background-color: #7161FF;
+  background-color: #2C1657;
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
@@ -16,9 +16,9 @@
 
 .wifreset{
   /*color: #49548A;*/
-  color: #3B4470;
+  color: #b9a8d8;
 }
 
 .wifreset:hover {
-  color: #5BFF3B;
+  color: rgb(99, 75, 143);
 }
