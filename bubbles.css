@@ -5,7 +5,7 @@
   background: #2C1657;
   color: rgb(220, 200, 255);
   font-size: 20px;
-  font-family: Arial;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   border-radius: 35%;
   border: 6px solid #8C7AAE;
@@ -15,7 +15,7 @@
 
 .space {
 	width: 10px;
-	height: 30px;
+	height: 15px;
 	background: inherit;
 }
 
